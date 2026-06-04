@@ -1,0 +1,135 @@
+/* ============================================================
+   EXERCISE 1: Flexbox
+   ============================================================
+
+   GOAL
+   ----
+   Style this page so it looks like this:
+
+   ┌──────────────────────────────────────────────────────────┐
+   │  🍅 Recipes          Home   About   Contact              │  ← nav
+   ├──────────────────────────────────────────────────────────┤
+   │                                                          │
+   │  ┌────────────┐  ┌────────────┐  ┌────────────┐         │
+   │  │            │  │            │  │            │         │
+   │  │  🍅         │  │  🥑         │  │  🍋         │         │
+   │  │            │  │            │  │            │         │
+   │  │ Tomato     │  │ Avocado    │  │ Lemon      │         │
+   │  │ Soup       │  │ Toast      │  │ Cake       │         │
+   │  │            │  │            │  │            │         │
+   │  │ 20 min     │  │ 10 min     │  │ 45 min     │         │
+   │  │ ⭐⭐⭐⭐⭐     │  │ ⭐⭐⭐⭐      │  │ ⭐⭐⭐⭐⭐     │         │
+   │  └────────────┘  └────────────┘  └────────────┘         │
+   │                                                          │
+   └──────────────────────────────────────────────────────────┘
+
+   The three cards should:
+     - sit side by side in a row
+     - share the available width equally
+     - have the same height, with the rating pushed to the bottom
+
+   REFERENCE
+   ---------
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+   YOUR TASKS
+   ----------
+   Search for every TODO comment and fill it in.
+   Do NOT change the HTML — only write CSS here.
+
+============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* ── Nav ─────────────────────────────────────────────────── */
+
+nav {
+  background-color: #fff;
+  padding: 0 2rem;
+  height: 56px;
+  border-bottom: 2px solid #e0e0e0;
+
+  /* TODO 1: turn nav into a flex container */
+  display:flex;
+
+  /* TODO 2: center items vertically */
+  align-items: center;
+
+  /* TODO 3: push .nav-links to the right side */
+  justify-content:space-between;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  /* TODO 4: make the links sit in a row with some space between them */
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+}
+
+/* ── Card row ────────────────────────────────────────────── */
+
+.card-row {
+  padding: 2rem;
+
+  /* TODO 5: turn .card-row into a flex container */
+  display: flex;
+
+  /* TODO 6: add space between the cards */
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+
+  /* TODO 7: make every card share the width equally (1 unit each) */
+  flex: 1;
+
+  /* TODO 8: turn the card itself into a flex container
+             so we can push the rating to the bottom */
+  display: flexbox;
+  flex-direction: row;
+}
+
+.card-emoji {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.card-time {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.card-rating {
+  font-size: 1.1rem;
+}

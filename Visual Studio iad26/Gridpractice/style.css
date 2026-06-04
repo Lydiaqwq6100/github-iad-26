@@ -1,0 +1,145 @@
+/* ============================================================
+   EXERCISE 2: CSS Grid
+   ============================================================
+
+   GOAL
+   ----
+   Style this page so it looks like this:
+
+   ┌──────────────────────────────────────────────────────────┐
+   │                                                          │
+   │                      My Blog Post                       │  ← header (full width)
+   │                                                          │
+   ├────────────────────────────────────┬─────────────────────┤
+   │                                    │                     │
+   │  Tomato soup is one of the great   │  About the author   │
+   │  comfort foods of the world...     │                     │  ← article + sidebar
+   │                                    │  Maria writes about │
+   │  It warms you up on cold days...   │  food and travel.   │
+   │                                    │                     │
+   ├────────────────────────────────────┴─────────────────────┤
+   │                                                          │
+   │   [ img ]     [ img ]     [ img ]     [ img ]           │  ← photo grid (full width)
+   │                                                          │
+   └──────────────────────────────────────────────────────────┘
+
+   REFERENCE
+   ---------
+   https://css-tricks.com/snippets/css/complete-guide-grid/
+
+   YOUR TASKS
+   ----------
+   Search for every TODO comment and fill it in.
+   Do NOT change the HTML — only write CSS here.
+
+============================================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  padding: 2rem;
+}
+
+/* ── Page layout ─────────────────────────────────────────── */
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+
+  /* TODO 1: turn .page into a grid container */
+  display: grid;
+
+  /* TODO 2: define 12 equal columns */
+  grid-template-columns: repeat(12, 1fr);
+  
+
+  /* TODO 3: add a gap between rows and columns */
+  gap: 1rem;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+
+  /* TODO 4: make the header span across all 12 columns
+  HINT: grid-column: 1 / -1  means "from line 1 to the last line" */
+  grid-column: 1 / -1;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* ── Article ─────────────────────────────────────────────── */
+
+article {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  line-height: 1.7;
+
+  /* TODO 5: article should span 8 of the 12 columns */
+  grid-column: 1 / span 8;
+}
+
+article p + p {
+  margin-top: 1rem;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+
+aside {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+
+  /* TODO 6: sidebar should fill the remaining 4 columns */
+  grid-column: 9 / -1;
+}
+
+aside h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Photo grid ──────────────────────────────────────────── */
+
+.photo-grid {
+  /* TODO 8: make the photo grid span all 12 columns (same as the header) */
+  grid-column: 1 / -1;
+
+  /* TODO 7: turn .photo-grid into its OWN 12-column grid */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.photo {
+  /* TODO 9: each photo should span 3 columns (4 photos × 3 cols = 12) */
+  grid-column: auto / span 3;
+
+  background-color: #ccc;
+  border-radius: 8px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
