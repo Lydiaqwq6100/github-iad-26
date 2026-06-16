@@ -1,0 +1,1 @@
+console.log("Singapore is turning rain into drinking water!");

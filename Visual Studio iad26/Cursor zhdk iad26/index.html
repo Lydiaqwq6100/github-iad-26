@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lydia Liu | Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        @font-face {
+            font-family: 'DreamerTM';
+            src: url('DreamerTM-Regular copy.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .font-gothic {
+            font-family: 'DreamerTM', serif;
+            letter-spacing: -0.02em;
+        }
+        
+        .font-mono-body {
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .bg-aura {
+            background: url('未命名作品 2.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body class="bg-aura text-gray-900 font-mono-body min-h-screen selection:bg-pink-200 antialiased">
+
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-16 py-8 z-50">
+        <a href="#hero" class="text-3xl font-gothic hover:opacity-70 transition duration-200" data-cms="site-name">Lydia Liu</a>
+        <div class="flex gap-14 text-2xl font-gothic">
+            <a href="#about" class="flex items-center gap-1.5 hover:opacity-70 transition duration-200">
+                <img src="未命名作品.png" alt="" class="w-6 h-6 object-contain" data-cms="nav-icon"> About
+            </a>
+            <a href="#works" class="flex items-center gap-1.5 hover:opacity-70 transition duration-200">
+                <img src="未命名作品.png" alt="" class="w-6 h-6 object-contain" data-cms="nav-icon"> Works
+            </a>
+            <a href="#contacts" class="flex items-center gap-1.5 hover:opacity-70 transition duration-200">
+                <img src="未命名作品.png" alt="" class="w-6 h-6 object-contain" data-cms="nav-icon"> Contacts
+            </a>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex flex-col justify-center items-center pt-16">
+        <div class="max-w-2xl w-full px-6 flex justify-center">
+            <img src="未命名作品 3.PNG" alt="Portfolio" class="w-full h-auto" data-cms="hero-image">
+        </div>
+        <p class="mt-16 text-xl font-gothic tracking-wide" data-cms="hero-tagline">
+            Get to know me and my work ♡
+        </p>
+    </section>
+
+    <section id="about" class="min-h-screen max-w-5xl mx-auto px-16 py-32 flex flex-col justify-center">
+        <h2 class="text-4xl font-gothic mb-12">About me</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-14 items-start">
+            <div class="flex flex-col items-center w-full">
+                <span class="text-xs tracking-widest text-pink-400 mb-2 select-none">⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁</span>
+                <div class="w-full aspect-square border border-gray-300 overflow-hidden bg-white/20 backdrop-blur-xs">
+                    <img src="about-photo.png" alt="Lydia Liu" class="w-full h-full object-cover" data-cms="about-photo">
+                </div>
+                <span class="text-xs tracking-widest text-pink-400 mt-2 select-none">⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁♡⌁</span>
+            </div>
+            
+            <div class="md:col-span-2 space-y-8 text-[15px] leading-relaxed tracking-wide pt-4">
+                <p data-cms="about-bio">
+                    A well-versed and passionate individual who is willing to adapt to different environments and try out new things. Fluent in both English and Chinese, I love conversing with different types of people, whilst exploring various design potential wth them. With a passion in social phenomenons, I always aim to immerse myself in various experiences to hone my skills at designing with compassion. I always thrive to achieve care for minorities, especially in my product design works.
+                </p>
+                <div class="space-y-1.5 pt-2">
+                    <p><span class="font-bold">Email:</span> <a href="mailto:liu.yibai@mylasalle.edu.sg" data-cms="email-link" class="underline hover:text-pink-600 transition">liu.yibai@mylasalle.edu.sg</a></p>
+                    <p><span class="font-bold">Instagram:</span> <a href="https://instagram.com/lybzzzzzzz" target="_blank" data-cms="instagram-link" class="underline hover:text-pink-600 transition">lybzzzzzzz</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-28">
+            <h3 class="text-4xl font-gothic mb-14">Education</h3>
+            <div id="education-list" class="relative border-l border-black ml-4 space-y-16 py-2">
+                <div class="relative pl-10">
+                    <span class="absolute -left-[9px] -top-1 text-xl select-none bg-transparent">★</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-2">
+                        <span class="text-sm font-bold">2025~</span>
+                        <div class="sm:col-span-3">
+                            <h4 class="font-bold text-base">BA (Hons) Design for Social Future</h4>
+                            <p class="text-xs text-gray-600 mt-1">(UAS) Lasalle College of the Arts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative pl-10">
+                    <span class="absolute -left-[9px] -top-1 text-xl select-none bg-transparent">★</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-2">
+                        <span class="text-sm font-bold">2022-2025</span>
+                        <div class="sm:col-span-3">
+                            <h4 class="font-bold text-base">Diploma in 3D Design (Object & Jewellery)</h4>
+                            <p class="text-xs text-gray-600 mt-1">Nanyang Academy of Fine Arts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative pl-10">
+                    <span class="absolute -left-[9px] -top-1 text-xl select-none bg-transparent">★</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-2">
+                        <span class="text-sm font-bold">2015 - 2021</span>
+                        <div class="sm:col-span-3">
+                            <h4 class="font-bold text-base">Junior College Graduate</h4>
+                            <p class="text-xs text-gray-600 mt-1">Dunman High School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-end mt-16">
+            <a href="#works" class="text-xl font-gothic border-b border-black pb-1 flex items-center gap-1 hover:opacity-60 transition duration-200">
+                <img src="未命名作品.png" alt="" class="w-5 h-5 object-contain" data-cms="nav-icon"> Take a look at my works!
+            </a>
+        </div>
+    </section>
+
+    <section id="works" class="min-h-screen max-w-5xl mx-auto px-16 py-32 flex flex-col justify-center items-center">
+        <h2 class="text-4xl font-gothic mb-24">My Works</h2>
+        
+        <div id="works-grid" class="grid grid-cols-1 md:grid-cols-3 gap-16 w-full">
+            <a href="category.html?slug=product-design" class="group flex flex-col items-center text-center space-y-6">
+                <div class="w-full aspect-[4/3] flex items-center justify-center transition group-hover:scale-[1.03] duration-300 ease-out">
+                    <img src="works-product.png" alt="Product Designs" class="w-full h-full object-cover rounded-sm shadow-xs">
+                </div>
+                <span class="text-2xl font-gothic group-hover:opacity-70 transition">Product Designs</span>
+            </a>
+            <a href="category.html?slug=jewellery-design" class="group flex flex-col items-center text-center space-y-6">
+                <div class="w-full aspect-[4/3] flex items-center justify-center transition group-hover:scale-[1.03] duration-300 ease-out">
+                    <img src="works-jewellery.png" alt="Jewellery Practices" class="w-full h-full object-cover rounded-sm shadow-xs">
+                </div>
+                <span class="text-2xl font-gothic group-hover:opacity-70 transition">Jewellery Practices</span>
+            </a>
+            <a href="category.html?slug=events-exhibitions" class="group flex flex-col items-center text-center space-y-6">
+                <div class="w-full aspect-[4/3] flex items-center justify-center transition group-hover:scale-[1.03] duration-300 ease-out">
+                    <img src="works-events.png" alt="Events & Exhibitions" class="w-full h-full object-cover rounded-sm shadow-xs">
+                </div>
+                <span class="text-2xl font-gothic group-hover:opacity-70 transition">Events & Exhibitions</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contacts" class="min-h-screen flex flex-col justify-center items-center py-32">
+        <h2 class="text-4xl font-gothic mb-10">Contacts</h2>
+        <div class="text-center space-y-2 text-[15px] tracking-wide">
+            <p><span class="font-bold">Email:</span> <a href="mailto:liu.yibai@mylasalle.edu.sg" data-cms="email-link" class="underline hover:text-pink-600 transition">liu.yibai@mylasalle.edu.sg</a></p>
+            <p><span class="font-bold">Instagram:</span> <a href="https://instagram.com/lybzzzzzzz" target="_blank" data-cms="instagram-link" class="underline hover:text-pink-600 transition">lybzzzzzzz</a></p>
+        </div>
+    </section>
+
+    <script src="js/config.js"></script>
+    <script src="js/sanity-client.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>

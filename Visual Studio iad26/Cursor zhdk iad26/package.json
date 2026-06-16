@@ -1,0 +1,11 @@
+{
+  "name": "lydia-liu-portfolio",
+  "private": true,
+  "scripts": {
+    "studio": "npm run dev --prefix studio",
+    "studio:build": "npm run build --prefix studio",
+    "studio:deploy": "npm run deploy --prefix studio",
+    "seed": "npm run seed --prefix studio",
+    "setup": "npm install --prefix studio && cp studio/.env.example studio/.env"
+  }
+}

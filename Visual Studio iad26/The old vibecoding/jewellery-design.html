@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheng · Lydia Liu</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        @font-face {
+            font-family: 'DreamerTM';
+            src: url('DreamerTM-Regular copy.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        .font-gothic {
+            font-family: 'DreamerTM', serif;
+            letter-spacing: -0.02em;
+        }
+
+        .font-mono-body {
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .bg-aura {
+            background: url('未命名作品 2.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .preview-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+            background: #fff;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-aura text-gray-900 font-mono-body min-h-screen selection:bg-pink-200 antialiased">
+
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-8 md:px-16 py-8 z-50">
+        <a href="index.html" class="text-2xl md:text-3xl font-gothic hover:opacity-70 transition duration-200">Lydia Liu</a>
+        <a href="index.html#works" class="text-lg md:text-xl font-gothic flex items-center gap-1.5 hover:opacity-70 transition duration-200 border-b border-black pb-1">
+            <img src="未命名作品.png" alt="" class="w-5 h-5 object-contain"> Back to works
+        </a>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-8 md:px-16 pt-32 pb-24">
+        <p class="text-sm tracking-wide text-gray-600 mb-4 font-gothic">Jewellery Practices</p>
+        <h1 class="text-5xl md:text-6xl font-gothic mb-10">Sheng</h1>
+
+        <div class="space-y-6 text-[15px] leading-relaxed tracking-wide max-w-3xl">
+            <p>
+                “Sheng” in this case refers to the Chinese word, “生”, which embodies the growth pains (生长痛) and fertility pains (生育痛) of a woman. Made with hardware store materials that are easily accessible, thiswork represents the blood, sweat and tears a woman has to go through throughout their lifespan.
+            </p>
+            <p class="italic text-gray-700">
+                * Selected for display at the NAFA project library
+            </p>
+        </div>
+
+        <div class="mt-16 space-y-12">
+            <section>
+                <h2 class="text-2xl font-gothic mb-4">Sheng 1</h2>
+                <img
+                    src="Jewellery design/sheng-1-preview.png"
+                    alt="Sheng 1 project preview"
+                    class="preview-img"
+                >
+                <p class="mt-4 text-sm">
+                    <a href="Jewellery design/Sheng 1.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-pink-600 transition">Open Sheng 1 in a new tab</a>
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-gothic mb-4">Sheng 2</h2>
+                <img
+                    src="Jewellery design/sheng-2-preview.png"
+                    alt="Sheng 2 project preview"
+                    class="preview-img"
+                >
+                <p class="mt-4 text-sm">
+                    <a href="Jewellery design/Sheng 2.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-pink-600 transition">Open Sheng 2 in a new tab</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
